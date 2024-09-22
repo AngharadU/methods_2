@@ -1,0 +1,1787 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Angharad Ugonna" />
+            <meta name="date" content="2024-09-22" />
+        
+
+        <title>Week1 - Notes | Advanced Calculus, Linear Algebra and Operational Research</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1727016268.910144">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1727016268.910144">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1727016268.910144">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1727016268.910144', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1727016268.910144"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1727016268.910144"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1727016268.910144"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1727016268.910144" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1727016268.910144" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1727016268.910144" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1727016268.910144">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" alt="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" alt="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1727016268.910144">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" alt="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Advanced Calculus, Linear Algebra and Operational Research</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Fourier Analysis</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Week1 - Notes
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../week1_prep/index.html">Previous: Week1 - Prep</a>
+            
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a href="week1_notes.pdf"download><svg class="icon" alt="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#week_1_revision_and_">Week 1: Revision and Introduction to Fourier Series</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000002">1 Terminology and background</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000003">2 Transforming Functions and Graphs</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000004">3 Periodic Functions and Graphs</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000026">4 Continuous, discontinuous, piecewise continuous and discrete functions</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000027">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000029">5 Piecewise functions</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000039">5.1 From algebra to graph…</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000048">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000063">6 Odd and even functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000081">7 Determining whether a function is odd or even</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000103">8 Combining sinusoids</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000117">9 Fourier’s Theorem</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="week_1_revision_and_">Week 1: Revision and Introduction to Fourier Series</h1>
+<p class="authors">
+<span class="author"></span>
+</p>
+</div>
+<p>
+<span class="vspace" style="height: -56.905511811023615pt"></span> The topic of Fourier Analysis is about taking certain types of function and realising that they can be expressed as a sum or integral of trigonometric functions of differing frequencies, phases and amplitudes. We know a great deal about trigonometric functions, so this can then provide a powerful analytical approach to topics such as signal processing, antenna theory, the science of music (and art), and image processing. It is also part of many traditional applied mathematics approaches to topics such as partial differential equations and radiation patterns of horn antennas (including heat conduction calculations, which was the area within which Fourier developed these mathematical ideas). 
+</p>
+<section class="section">
+<h2 id="a0000000002">1 Terminology and background</h2>
+<p>
+Many physical processes are periodic - that is, they repeat themselves exactly at regular intervals. The idea of Fourier Analysis is to represent these processes by a combination of sine and cosine functions, instead of by polynomials. Series formed in this way are called <b class="bfseries">Fourier Series</b>. Finding the coefficients of the sine and cosine functions is called <b class="bfseries">Fourier Analysis</b>, or <b class="bfseries">harmonic</b> or <b class="bfseries">spectral</b> analysis. One of the most important applications of this approach is in the analysis of waveforms, or signals: if we can find the right combination of sine waves, for example, which will represent the signal, then we know what frequencies make up that signal. We are going to put this aside for now and concentrate on the maths required but will revisit applications later. 
+</p>
+</section><section class="section">
+<h2 id="a0000000003">2 Transforming Functions and Graphs</h2>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+<script type="math/tex">y = A.f(x)</script>
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+<script type="math/tex"> y=f(x)+B</script>
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+<script type="math/tex"> y = f(x+\phi )</script>
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+<script type="math/tex">y= f(\omega x)</script>
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+</table>
+</section><section class="section">
+<h2 id="a0000000004">3 Periodic Functions and Graphs</h2>
+<p>
+ For a function <script type="math/tex">y=\cos (x)</script> with 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000005">
+<img alt="\begin{tikzpicture} [line cap=round,line join=round,&gt;=triangle 45,x=1.0cm,y=1.0cm]
+		\draw [color=cqcqcq,, xstep=1.5708cm,ystep=0.5cm] (-3.5,-1.5) grid (12.75,1.5);
+		\draw[-&gt;,color=black] (-3.1,0.) -- (13.,0.) node[below] {\footnotesize{$x$}};
+		\foreach \X/\Z in {{-pi}/-\pi, {-pi/2}/-\frac{\pi}{2},{pi/2}/\frac{\pi}{2},{pi}/\pi,{3*pi/2}/\frac{3\pi}{2},{2*pi}/2\pi,{5*pi/2}/\frac{5\pi}{2},{3*pi/3\pi}} {\draw (\X,3pt)--(\X,-3pt) node[below] {$\Z$};}
+		\draw[-&gt;,color=black] (0.,-1.7) -- (0.,1.7) node[right]{\footnotesize{$y$}};
+		\foreach \y in {-1.,-0.5,0.5,1.,1.5}
+		\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+		\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+		\clip(-3.1,-1.7) rectangle (14.,1.7);
+		\draw[line width=2.pt,color=blue,smooth,samples=100,domain=-3.2:12.750] plot(\x,{cos(((\x))*180/pi)});
+		\foreach \x in {0,..,{2*pi}/2\pi}
+		\draw [line width=2.pt,color=red,smooth,samples=100,domain=0:6.2] plot(\x,{cos(((\x))*180/pi)});
+	\end{tikzpicture}" src="images/img-0001.svg"/>
+</div> </div>
+<p>
+ then 
+</p>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+The shortest horizontal distance over which a periodic function repeats is called the 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+and is usually given the symbol 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+The number of times it repeats in a horizontal distance of 1 is called the <b class="bfseries">frequency</b> <script type="math/tex">f</script> and can be calculated from: 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+The number of times it repeats in a horizontal distance of <script type="math/tex">2\pi </script> is called the <b class="bfseries">angular frequency</b> <script type="math/tex">\omega </script> and can be calculated from: 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+Rearranging the above formulae gives us some other useful formulae: 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+<b class="bfseries">All</b> periodic functions have the property that 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+</table>
+<p>
+<span class="vspace" style="height: 28.452755905511808pt"></span>
+</p>
+<p>
+From Preparation (Exercise 4) we can now see that <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000006">
+<li id="a0000000007" value="1">
+<p>
+Define 
+</p>
+<ol class="enumerate" id="a0000000008">
+<li id="a0000000009" value="1">
+<p>
+Period, <script type="math/tex">T</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000010" value="2">
+<p>
+Frequency, <script type="math/tex">f</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000011" value="3">
+<p>
+Angular frequency, <script type="math/tex">\omega </script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+</ol>
+</li>
+<li id="a0000000012" value="2">
+<p>
+For the cosine wave shown above 
+</p>
+<ol class="enumerate" id="a0000000013">
+<li id="a0000000014" value="1">
+<p>
+what is the period? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000015" value="2">
+<p>
+what is the frequency? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000016" value="3">
+<p>
+what is the angular frequency? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+</ol>
+</li>
+<li id="a0000000017" value="3">
+<p>
+Think about the relationship <script type="math/tex">f(x)=f(x+T)</script>. What does it mean? Why is it the algebraic definition of a periodic function? Use the cosine wave as an example to think about it. 
+</p>
+</li>
+<li id="a0000000018" value="4">
+<p>
+For each of the functions below, sketch the function and calculate both the period and amplitude: 
+</p>
+<ol class="enumerate" id="a0000000019">
+<li id="a0000000020" value="1">
+<p>
+<script type="math/tex">y=\sin x</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+<script type="math/tex">A = </script>        , <script type="math/tex">T= </script>      
+</div>
+</li>
+<li id="a0000000021" value="2">
+<p>
+<script type="math/tex">y=3\sin 2x</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+<script type="math/tex">A = </script>        , <script type="math/tex">T= </script>      
+</div>
+</li>
+<li id="a0000000022" value="3">
+<p>
+<script type="math/tex"> y=\frac{1}{2} \sin 2x,</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+<script type="math/tex">A = </script>        , <script type="math/tex">T= </script>      
+</div>
+</li>
+<li id="a0000000023" value="4">
+<p>
+<script type="math/tex"> y=\frac{1}{2}\sin 3x</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+<script type="math/tex">A = </script>        , <script type="math/tex">T= </script>      
+</div>
+</li>
+<li id="a0000000024" value="5">
+<p>
+<script type="math/tex"> y=-3\sin \left(\frac{x}{2}\right)</script>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+<script type="math/tex">A = </script>        , <script type="math/tex">T= </script>      
+</div>
+</li>
+</ol>
+<p>
+ [Remember that if we write <script type="math/tex">\sin 2x</script> we mean <script type="math/tex">\sin (2x)</script>] 
+</p>
+</li>
+<li id="a0000000025" value="5">
+<p>
+Calculate the period of <script type="math/tex">y=\sin \left(\frac{2x}{3}\right)</script> and then sketch it. 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+<script type="math/tex">T= </script>      
+</div>
+</li>
+</ol>
+</div>
+</p>
+</section><section class="section">
+<h2 id="a0000000026">4 Continuous, discontinuous, piecewise continuous and discrete functions</h2>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+A <b class="bfseries">continuous</b> function is one where 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+A <b class="bfseries">discontinuous</b> function is one where 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:left; border-right:1px solid black"><p>
+The gaps are called 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+</table>
+<h4 id="a0000000027">Note</h4>
+<p>
+ A function cannot take both values at the discontinuity (<b class="bfseries">why?</b>). The value that is included is represented by a filled circle, <script type="math/tex"> \bullet </script>, and the value which is not valid with an empty circle, <script type="math/tex">\circ </script>. 
+</p>
+<p>
+A discontinuous function, like that shown above, is <b class="bfseries">piecewise continuous</b> because it is continuous between the discontinuities. 
+</p>
+<p>
+This is different from a <b class="bfseries">discrete function</b> which is only defined at discrete values of the domain. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000028">
+<img alt="\begin{tikzpicture} 
+			\draw[help lines, color=gray!30, dashed] (0,0) grid (6,6);
+			\draw[-&gt;,thick,color=black] (-0.5,0) -- (6.5,0) ;
+			\draw[-&gt;,thick, color=black] (-0.5,0) -- (6.5,0) ;
+			\foreach \x in {0,1,...,6}
+			\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+			{$\x$};
+			\draw (-0.1,6.3) node[left] {$y$}; 
+			\draw (6.5,-0.2) node[below] {$x$}; 
+			\draw[-&gt;, color=black] (0,-0.5) -- (0,6.5) ;
+			\foreach \y in {1,...,6}
+			\draw[shift={(0,\y)},color=black] (0pt,0pt) -- (3pt,0pt) node[left] 
+			{$\y $};
+			
+		\end{tikzpicture}" src="images/img-0002.svg"/>
+</div> </div>
+</section><section class="section">
+<h2 id="a0000000029">5 Piecewise functions</h2>
+<p>
+ We’re used to defining a function with a single algebraic expression, eg <script type="math/tex"> f(x) = x^2\cos x</script>. A piecewise function typically needs more than one part to the definition. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 1. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<div class="centered"> <div class="tikzcd" id="a0000000030">
+<img alt="\begin{tikzpicture} [line cap=round,line join=round,&gt;=triangle 45,x=1.0cm,y=1.0cm]
+				\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-3.5,-1.5) grid (3.5,3);
+				\draw[-&gt;,color=black] (-3.1,0) -- (3.,0) node[below] {\footnotesize{$x$}};
+				\foreach \x in {-3,-2,-1,0,1,2}
+				\draw[shift={(\x,0)},color=black] (0pt,0pt) -- (0pt,-3pt) node[below] 
+				{$\x$};
+				\draw[-&gt;,color=black] (0.,-1.7) -- (0.,3) node[left]{\footnotesize{$f(x)$}};
+				\foreach \y in {-1,0,...,2}
+				\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+				\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+					\foreach \x in {-3,0}
+				\draw[line width=2.pt,color=red,smooth,samples=100,domain=-3:0] plot(\x,\x+2);
+					\foreach \x in {0,3.50}
+				\draw[line width=2.pt,color=blue,smooth,samples=100,domain=0:3.5] plot(\x,2);
+				\end{tikzpicture}" src="images/img-0003.svg"/>
+</div> </div>
+<ol class="enumerate" id="a0000000031">
+<li id="a0000000032" value="1">
+<p>
+What is the equation of the red line?
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000033" value="2">
+<p>
+What range of <script type="math/tex">x</script> is this valid over? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000034" value="3">
+<p>
+What is the equation of the blue line? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000035" value="4">
+<p>
+What range of <script type="math/tex">x</script> is this valid over? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+</ol>
+<p>
+We combine these definitions in the format: 
+</p>
+<div class="centered"><div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</div>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 2. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+ Now consider this <b class="bfseries">periodic function</b>. Notice that at the discontinuities we’ve included circles to indicate which bits are part of the function 
+</p>
+<div class="centered"> <img alt="\includegraphics[scale=1]{img/img_pcects1.png}" src="images/img-0001.png"/> </div>
+<ol class="enumerate" id="a0000000036">
+<li id="a0000000037" value="1">
+<p>
+What is the equation of the red line? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+<li id="a0000000038" value="2">
+<p>
+What range of <script type="math/tex">x</script> is this valid over? 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</li>
+</ol>
+<p>
+The other parts of this function could be written using other straight lines, but since this function is periodic, we can write <script type="math/tex">f(x)=f(x+4)</script>, so our full algebraic description of the function is 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:red">
+</div>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<section class="subsection">
+<h3 id="a0000000039">5.1 From algebra to graph…</h3>
+<p>
+Sometimes a function needs even more parts to its algebraic description. Consider this 
+</p>
+<div class="eqn" id="a0000000040">
+<script type="math/tex; mode=display">\begin{equation}\nonumber \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{ll} 2x, &  0<x\leq 1\\ 2 &  1<x\leq 5 \end{array}}\right.\\ f(x) & = f(x+5) \end{array}\tag{1}\end{equation}</script>
+</div>
+<p>
+This is how we decode this: 
+</p>
+<p>
+<div class="minipage" id="a0000000041" style="width: 305.34075pt"><p>
+ This first part 
+</p>
+<div class="eqn" id="a0000000042">
+<script type="math/tex; mode=display">\begin{equation}\nonumber \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{ll} 2x, &  0<x\leq 1\\ \end{array}}\right.\\ \end{array}\tag{1}\end{equation}</script>
+</div>
+<p>
+ means 
+</p>
+<p>
+“Between <script type="math/tex">x=0</script> and <script type="math/tex">x=1</script>, the function <script type="math/tex">f</script> is given by <script type="math/tex">2x</script>” 
+</p>
+</div> <div class="minipage" id="a0000000043" style="width: 140.9265pt"> <img alt="\includegraphics[scale=0.8]{img/img_PF1.png}" src="images/img-0002.png"/> </div>
+</p>
+<p>
+<div class="minipage" id="a0000000044" style="width: 305.34075pt"> This second part <div class="eqn" id="a0000000045">
+<script type="math/tex; mode=display">\begin{equation}\nonumber \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{ll} \color {gray}{2x}, &  \color {gray}{0<x\leq 1}\\ 2 &  1<x\leq 5 \end{array}}\right.\\ \end{array}\tag{1}\end{equation}</script>
+</div> means “Between <script type="math/tex">x=1</script> and <script type="math/tex">x=5</script>, the function <script type="math/tex">f</script> is given by 2” </div> <div class="minipage" id="a0000000046" style="width: 140.9265pt"> <img alt="\includegraphics[scale=0.8]{img/img_PF2.png}" src="images/img-0003.png"/> </div>
+</p>
+<p>
+This last part 
+</p>
+<div class="eqn" id="a0000000047">
+<script type="math/tex; mode=display">\begin{equation}\nonumber \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{ll} \color {gray}{2x}, &  \color {gray}{0<x\leq 1}\\ \color {gray}{2} &  \color {gray}{1<x\leq 5 } \end{array}}\right.\\ f(x) & = f(x+5) \end{array}\tag{1}\end{equation}</script>
+</div>
+<p>
+ means “The function is periodic, and the period is 5.” 
+</p>
+<p>
+<img alt="\includegraphics[scale=0.8]{img/img_PF3.png}" src="images/img-0004.png"/>
+</p>
+<h4 id="a0000000048">Note</h4>
+<p>
+ The details about which end points are included in the function, and the solid or empty circles, are included here for completeness and because you’re mathematicians who should know about it. However, for the purposes of Fourier Analysis this subtlety is rarely, if ever, necessary. Expect me to fudge it or ignore it often. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 3. </b> <span class="rmfamily"><p>
+<div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+The following functions have been described analytically 
+</p>
+<ol class="enumerate" id="a0000000049">
+<li id="a0000000050" value="1">
+<p>
+Between <script type="math/tex">x=0</script> and <script type="math/tex">x=4</script> the function value is 3 <br/>Between <script type="math/tex">x=4</script> and <script type="math/tex">x=6</script> the function value is 0 <br/>The function repeats every 6 units 
+</p>
+<div class="centered"> <img alt="\includegraphics[height=3cm]{img/analytical_descr_1.png}" src="images/img-0005.png"/> </div>
+<p>
+ So, the function could be defined 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*} \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{lll} 3 &  \textrm{where} &  0<x<4 \\ 0 &  \textrm{where} &  4<x<6 \\ \end{array} }\right. \\ f(x) & = f(x+6)\\ \end{array}\end{equation*}</script></span>
+</li>
+<li id="a0000000051" value="2">
+<p>
+Between <script type="math/tex">x=0</script> and <script type="math/tex">x=2</script> the function value is x <br/>between <script type="math/tex">x=2</script> and <script type="math/tex">x=6</script> the function value is <script type="math/tex">-\frac{1}{2}x+3</script> <br/>The function repeats every 6 units 
+</p>
+<div class="centered"> <img alt="\includegraphics[height=3cm]{img/analytical_descr_2.png}" src="images/img-0006.png"/> </div>
+<p>
+So, the function could be defined 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*} \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{lll} x &  \textrm{where} &  0<x<2 \\ -\frac{1}{2}x+3 &  \textrm{where} &  2<x<6 \\ \end{array} }\right. \\ f(x) & = f(x+6)\\ \end{array}\end{equation*}</script></span>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span>
+</p>
+</span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 1. </b> <span class="rmfamily"><b class="bfseries">Piecewise Functions</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000052">
+<li id="a0000000053" value="1">
+<p>
+For each of the following functions, sketch the graph. For those functions which are periodic, state the period and sketch the graph over at least 3 periods.     <ol class="enumerate" id="a0000000054">
+<li id="a0000000055" value="1">
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*} \begin{array}{ll} y(x) & = \left\lbrace {\begin{array}{lll} -x &  \textrm{where} &  x<0 \\ ~ ~ x &  \textrm{where} &  x\geq 0 \\ \end{array} }\right. \\ \end{array}\end{equation*}</script></span>
+</li>
+<li id="a0000000056" value="2">
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*} \begin{array}{ll} g(x) & = \left\lbrace {\begin{array}{lll} ~ ~ 2 &  \textrm{where} &  0<x< 1 \\ -2 &  \textrm{where} &  1\leq x\leq 3 \\ \end{array} }\right. \\ g(x) & = g(x+3)\\ \end{array}\end{equation*}</script></span>
+</li>
+<li id="a0000000057" value="3">
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*} \begin{array}{ll} h(x) & = \sin x, -\frac{\pi }{2}\leq x <\frac{\pi }{2} \\ h(x) & = h(x+\pi )\\ \end{array}\end{equation*}</script></span>
+</li>
+<li id="a0000000058" value="4">
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*} \begin{array}{ll} f(x) & = \left\lbrace {\begin{array}{ll} 2-x, &  0\leq x\leq 2 \\ 2x-4, &  2\leq x\leq 3 \\ \end{array} }\right. \\ f(x) & = f(x+3)\\ \end{array}\end{equation*}</script></span>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000059" value="2">
+<p>
+Write the following periodic functions in algebraic form: 
+</p>
+<ol class="enumerate" id="a0000000060">
+<li id="a0000000061" value="1">
+<p>
+<img alt="\includegraphics[]{img/PF_Ex4Q2.png}" src="images/img-0007.png"/>
+</p>
+</li>
+<li id="a0000000062" value="2">
+<p>
+<img alt="\includegraphics[]{img/PF_Ex4Q2b.png}" src="images/img-0008.png"/>
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</div><span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000063">6 Odd and even functions</h2>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 1. </b> <span class="rmfamily"><b class="bfseries">Odd and Even Functions</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     A function <script type="math/tex">f(x)</script> is <dl class="description">
+<dt>EVEN</dt>
+<dd><p>
+if 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:qqwuqq">
+</div>
+<div class="tikzcd" id="a0000000064">
+<img alt="\begin{tikzpicture} [line cap=round,line join=round,&gt;=triangle 45,x=0.85cm,y=0.85cm]
+				\draw [color=cqcqcq,, xstep=1.5708cm,ystep=0.5cm] (-6.5,-1.5) grid (6.75,1.5);
+				\draw[-&gt;,color=black] (-6.2,0.) -- (6.2,0.) node[below] {\footnotesize{$x$}};
+				\foreach \X/\Z in {{-2*pi}/-2\pi,{-3*pi/2}/-\frac{3\pi}{2},{-pi}/-\pi, {-pi/2}/-\frac{\pi}{2},{pi/2}/\frac{\pi}{2},{pi}/\pi,{3*pi/2}/\frac{3\pi}{2},{2*pi}/2\pi} {\draw (\X,3pt)--(\X,-3pt) node[below] {$\Z$};}
+				\draw[-&gt;,color=black] (0.,-1.7) -- (0.,1.7) node[right]{\footnotesize{$y$}};
+				\foreach \y in {-1.,-0.5,0.5,1.,1.5}
+				\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+				\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+				\clip(-6.2,-1.7) rectangle (6.2,1.7);
+				\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-6.2:6.20] plot(\x,{cos(((\x))*180/pi)});
+			\end{tikzpicture}" src="images/img-0004.svg"/>
+</div>
+</dd>
+<dt>ODD</dt>
+<dd><p>
+if
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:qqwuqq">
+</div>
+<div class="tikzcd" id="a0000000065">
+<img alt="\begin{tikzpicture} [line cap=round,line join=round,&gt;=triangle 45,x=0.85cm,y=0.85cm]
+				\draw [color=cqcqcq,, xstep=1.5708cm,ystep=0.5cm] (-6.5,-1.5) grid (6.75,1.5);
+				\draw[-&gt;,color=black] (-6.2,0.) -- (6.2,0.) node[below] {\footnotesize{$x$}};
+				\foreach \X/\Z in {{-2*pi}/-2\pi,{-3*pi/2}/-\frac{3\pi}{2},{-pi}/-\pi, {-pi/2}/-\frac{\pi}{2},{pi/2}/\frac{\pi}{2},{pi}/\pi,{3*pi/2}/\frac{3\pi}{2},{2*pi}/2\pi} {\draw (\X,3pt)--(\X,-3pt) node[below] {$\Z$};}
+				\draw[-&gt;,color=black] (0.,-1.7) -- (0.,1.7) node[right]{\footnotesize{$y$}};
+				\foreach \y in {-1.,-0.5,0.5,1.,1.5}
+				\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+				\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+				\clip(-6.2,-1.7) rectangle (6.2,1.7);
+				\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-6.2:6.2] plot(\x,{sin(((\x))*180/pi)});
+				
+			\end{tikzpicture}" src="images/img-0005.svg"/>
+</div>
+</dd>
+</dl>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 2. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000066">
+<li id="a0000000067" value="1">
+<p>
+State whether the following functions are odd or even.     <ol class="enumerate" id="a0000000068">
+<li id="a0000000069" value="1">
+<div class="centered"><img alt="\includegraphics[height=2.2cm]{img/Q1_odd_even.png}" src="images/img-0009.png"/> <div class="centered"><img alt="\includegraphics[height=2.2cm]{img/Q2_odd_even.png}" src="images/img-0010.png"/> <div class="centered"><img alt="\includegraphics[width=6cm]{img/Q3_odd_even.png}" src="images/img-0011.png"/> <div class="centered"><img alt="\includegraphics[width=6cm]{img/Q4_odd_even.png}" src="images/img-0012.png"/> </div>
+</div>
+</div>
+</div>
+</li>
+</ol>
+</p>
+</li>
+<li id="a0000000070" value="2">
+<p>
+For each of the following function, <b class="bfseries">sharing the work between you</b>
+</p>
+<ol class="enumerate" id="a0000000071">
+<li id="a0000000072" value="1">
+<p>
+decide whether you think it is even or odd by trying a few positive/ negative numbers 
+</p>
+</li>
+<li id="a0000000073" value="2">
+<p>
+sketch or plot the graph - make a note of any observation that you make.     <ol class="enumerate" id="a0000000074">
+<li id="a0000000075" value="1">
+<p>
+<script type="math/tex">f(x) =x^2</script>
+</p>
+</li>
+<li id="a0000000076" value="2">
+<p>
+<script type="math/tex">f(x) =x^3</script>
+</p>
+</li>
+<li id="a0000000077" value="3">
+<p>
+<script type="math/tex">f(x) = x^2+x</script>
+</p>
+</li>
+<li id="a0000000078" value="4">
+<p>
+<script type="math/tex">f(x) = \sin x</script>
+</p>
+</li>
+<li id="a0000000079" value="5">
+<p>
+<script type="math/tex">f(x) = \cos x</script>
+</p>
+</li>
+<li id="a0000000080" value="6">
+<p>
+<script type="math/tex">f(x) = \sin x + \cos x</script>
+</p>
+</li>
+</ol>
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="section">
+<h2 id="a0000000081">7 Determining whether a function is odd or even</h2>
+<p>
+ Picking values and evaluating <script type="math/tex">f(x)</script> and <script type="math/tex">f(-x)</script>, or drawing graphs, is a really good way of 
+</p>
+<ul class="itemize" id="a0000000082">
+<li id="a0000000083">
+<p>
+disproving that a function is odd or even (ie proving it is not odd, or not even) 
+</p>
+</li>
+<li id="a0000000084">
+<p>
+giving us a good hint that it probably is odd or even. 
+</p>
+</li>
+</ul>
+<p>
+However, in order to prove that something is odd or even, we need algebra. 
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 4. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<ol class="enumerate" id="a0000000085">
+<li id="a0000000086" value="1">
+<p>
+Prove that <script type="math/tex">f(x)=3x^2+x</script> is neither even nor odd. 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:blue">
+</div>
+</li>
+<li id="a0000000087" value="2">
+<p>
+Prove that <script type="math/tex">f(x)=3x^2+4</script> is even. 
+</p>
+<p>
+<b class="bfseries">Solution:</b> We’re going to start with <script type="math/tex">f(-x)</script>, and work our way through to <script type="math/tex">f(x)</script>. 
+</p>
+<span><script type="math/tex; mode=display">\begin{eqnarray*}  f(-x)& =& 3(-x)^2+4\\ & =& 3x^2+4 \\ & =& f(x) \end{eqnarray*}</script></span>
+</li>
+<li id="a0000000088" value="3">
+<p>
+Determine whether an odd function, multiplied by another odd function, is odd, even, or neither even nor odd. 
+</p>
+<p>
+<b class="bfseries">Solution:</b> Let 
+</p>
+<div class="eqn" id="eq_multodd1">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_multodd1} h(x)=f(x)\times g(x)\tag{1}\end{equation}</script>
+</div>
+<p>
+ which means that 
+</p>
+<div class="eqn" id="eq_multodd2">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_multodd2} h(-x)=f(-x)\times g(-x)\tag{2}\end{equation}</script>
+</div>
+<p>
+Now if <script type="math/tex">f</script> and <script type="math/tex">g</script> are both odd functions, we can say that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">f(-x)=-f(x) \qquad \text{ and } \qquad g(-x)=-g(x)</script></span>
+<p>
+ which means that equation (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#eq_multodd2">2</a>
+) can be written as 
+</p>
+<div class="eqn" id="ex:oddeven">
+<script type="math/tex; mode=display">\begin{equation}\label{eq_multodd3} h(-x)=[-f(x)]\times [-g(x)]=f(x) \times g(x)\tag{3}\end{equation}</script>
+</div>
+<p>
+ and comparing equations (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#eq_multodd1">1</a>
+) and (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#ex:oddeven">3</a>
+) we see that 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">h(-x)=h(x)</script></span>
+<p>
+ which means that we can say <script type="math/tex">h</script> is even, because it satisfies the definition of an even function. Since we have assumed nothing about <script type="math/tex">f</script> and <script type="math/tex">g</script> except that they are odd, we have proved that any odd function, multiplied by another odd function, gives an even function. 
+</p>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 3. </b> <span class="rmfamily"><b class="bfseries">Odd/even functions</b> <div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000089">
+<li id="a0000000090" value="1">
+<p>
+Ten functions are defined as follows: 
+</p>
+<div class="eqn" id="eq:oddeven_ex">
+<script type="math/tex; mode=display">\begin{equation}\label{eq:oddeven_ex} \begin{array}{lll} f(x)=5 &  f(x) = 2\sin 3x &  f(x)=\cos \left(x - \frac{\pi }{2}\right) \\ f(x)=5x+2 &  f(x) =2\sin \frac{1}{x} &  f(x)=\ln x \\ f(x) = 2\cos 5x &  f(x)=4+\sin 3x &  f(x)=x^4+x^2\\ &  f(x) =0 & \\ \end{array}\tag{4}\end{equation}</script>
+</div>
+<ol class="enumerate" id="a0000000091">
+<li id="a0000000092" value="1">
+<p>
+State/guess/reason whether each function is odd or even or neither from your knowledge of it or similar functions. 
+</p>
+</li>
+<li id="a0000000093" value="2">
+<p>
+Plot the functions. Do they look odd, even or neither? 
+</p>
+</li>
+<li id="a0000000094" value="3">
+<p>
+Pick one odd and one even function from (  <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#eq:oddeven_ex">4</a>
+) and <b class="bfseries">prove</b> that your result is correct. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000095" value="2">
+<p>
+Complete the following table, working alone or together. Use a mixture of reasoning, pictures, experimenting and symbolic work. 
+</p>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+ odd <script type="math/tex">\times </script> odd <script type="math/tex">\rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"><p>
+ odd + odd <script type="math/tex"> \rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+even <script type="math/tex">\times </script> even <script type="math/tex">\rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"><p>
+ even + even <script type="math/tex"> \rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+odd <script type="math/tex">\times </script> even <script type="math/tex">\rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"><p>
+ odd + even <script type="math/tex"> \rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black"><p>
+odd <script type="math/tex">\times </script> neither <script type="math/tex">\rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"><p>
+ odd + neither <script type="math/tex"> \rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black"> </td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+even <script type="math/tex">\times </script> neither<script type="math/tex">\rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+ even + neither <script type="math/tex"> \rightarrow </script>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:left; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"> </td>
+</tr>
+</table>
+</li>
+<li id="a0000000096" value="3">
+<p>
+Sketch each of the following functions, state whether the function is odd, even or neither and determine its Fourier series. 
+</p>
+<ol class="enumerate" id="a0000000097">
+<li id="a0000000098" value="1">
+<p>
+<script type="math/tex">f(x)=f(x+2 \pi ) </script>
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  f(x) = \begin{cases}  -4 &  -\pi <x\leq 0 \\ 4 &  0<x\leq \pi \end{cases}\end{equation*}</script></span>
+</li>
+<li id="a0000000099" value="2">
+<p>
+<script type="math/tex">f(x)=f(x+2 \pi ) </script>
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  f(x) = \begin{cases}  -5 &  -\pi \leq x<-\frac{\pi }{2} \\ \, \, \,  5 &  -\frac{\pi }{2} \leq x< \frac{\pi }{2}\\ -5 &  \frac{\pi }{2} \leq x< \pi \end{cases}\end{equation*}</script></span>
+</li>
+<li id="a0000000100" value="3">
+<p>
+<script type="math/tex">f(x)=x^{2} +2</script> where <script type="math/tex">-\pi \le x < \pi </script> and <script type="math/tex">f(x)=f(x+2 \pi ) </script>
+</p>
+</li>
+<li id="a0000000101" value="4">
+<p>
+<script type="math/tex">f(x)=\frac{6x}{\pi }</script> where <script type="math/tex">-\pi < x \le \pi </script> and <script type="math/tex">f(x)=f(x+2 \pi ) </script>
+</p>
+</li>
+<li id="a0000000102" value="5">
+<p>
+<script type="math/tex">f(x)=f(x+2 \pi ) </script>
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  f(x) = \begin{cases}  \frac{x}{2} + \frac{\pi }{2} &  -\pi <x\leq 0 \\ \frac{x}{2} - \frac{\pi }{2} &  0<x\leq \pi \end{cases}\end{equation*}</script></span>
+</li>
+</ol>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+<br/>
+</p>
+</section><section class="section">
+<h2 id="a0000000103">8 Combining sinusoids</h2>
+<p>
+ Consider the function 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">y=\sin x +A\sin \omega x.</script></span>
+<p>
+ Figure   <a class="ref" href="../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#FT_sinsum1">1</a>
+ shows <script type="math/tex">y</script> for <script type="math/tex">A=0.5</script> and <script type="math/tex">\omega =2</script>. 
+</p>
+<figure id="FT_sinsum1">
+<div class="tikzcd" id="a0000000104">
+<img alt="\begin{tikzpicture} [line cap=round,line join=round,&gt;=triangle 45,x=1cm,y=1cm]
+		\draw [color=cqcqcq,, xstep=1cm,ystep=1cm] (-7.,-2.) grid (7.,2.);
+		\draw[-&gt;,color=black] (-7.,0.) -- (7.,0.);
+		\foreach \x in {-7.,-6.,-5.,-4.,-3.,-2.,-1.,1.,2.,3.,4.,5.,6.}
+		\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+		\draw[-&gt;,color=black] (0.,-2.) -- (0.,2.);
+		\foreach \y in {-2.,-1.,1.,2.}
+		\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+		\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+		\clip(-7.,-2.) rectangle (7.,3.);
+		\draw[line width=1.pt,dash pattern=on 1pt off 1pt,color=qqwuqq,smooth,samples=100,domain=-7.0:7.0] plot(\x,{sin(((\x))*180/pi)});
+		\draw[line width=1.pt,dash pattern=on 1pt off 1pt,color=ccqqqq,smooth,samples=100,domain=-7.0:7.0] plot(\x,{0.5*sin((2.0*(\x))*180/pi)});
+		\draw[line width=2.pt,color=qqqqff,smooth,samples=100,domain=-7.0:7.0] plot(\x,{0.5*sin((2.0*(\x))*180/pi)+sin(((\x))*180/pi)});
+		%	\begin{scriptsize}
+			\draw[color=black] (0.3,1.8) node {$y$};
+			\draw[color=black] (6.6,-0.4) node {$x$};
+			\draw[color=qqwuqq] (-5,2.5) node {$---y=\sin x$};
+			\draw[color=ccqqqq] (-1,2.5) node {$---y=0.5\sin(2x)$};
+			\draw[color=qqqqff] (4,2.5) node {$---y=\sin x+ 0.5\sin(2x)$};
+			%	\end{scriptsize}
+	\end{tikzpicture}" src="images/img-0006.svg"/>
+</div>
+<figcaption id="FT_sinsum1">
+<span class="caption_title">Figure</span>
+<span class="caption_ref">1</span>
+<span class="caption_text">Plot of <script type="math/tex">y=\sin x</script>, <script type="math/tex">y=0.5\sin (2x)</script> and <script type="math/tex">y=\sin x0.5\sin (2x)</script>. To see what happens when you change <script type="math/tex">A</script> and <script type="math/tex">n</script> go to <a href="https://www.geogebra.org/groups">https://www.geogebra.org/groups</a> and enter code <b class="bfseries">Q8R3Q</b>. </span>
+</figcaption>
+</figure>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Exercise 4. </b> <span class="rmfamily"><div class="tcolorbox" style="background-color:lightcoral; border-color:DarkRed">
+<ol class="enumerate" id="a0000000105">
+<li id="a0000000106" value="1">
+<p>
+Consider the function <script type="math/tex">y=\sin x +A\sin \omega x.</script> Use link above to access the Geogebra file. 
+</p>
+<ol class="enumerate" id="a0000000107">
+<li id="a0000000108" value="1">
+<p>
+Pick an integer value for <script type="math/tex">\omega </script> and any value of <script type="math/tex">A</script>. What is its period (exactly)? 
+</p>
+</li>
+<li id="a0000000109" value="2">
+<p>
+Repeat (a) for different values of <script type="math/tex">A</script> and (integer) <script type="math/tex">\omega </script> What is its period? 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000110" value="2">
+<p>
+What is the period of a wave in the form 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">y = b_1\sin x + b_2\sin \omega x</script></span>
+<p>
+ where <script type="math/tex">\omega </script> is an integer? Does it matter what <script type="math/tex">b_1</script> and <script type="math/tex">b_2</script> are? Does it matter what <script type="math/tex">\omega </script> is? 
+</p>
+</li>
+<li id="a0000000111" value="3">
+<p>
+What happens if we use cosines, or mix sines and cosines. For example, 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">y= b_1\sin x + b_2\cos \omega x</script></span>
+</li>
+<li id="a0000000112" value="4">
+<p>
+<b class="bfseries">Extension activity</b>
+</p>
+<ol class="enumerate" id="a0000000113">
+<li id="a0000000114" value="1">
+<p>
+How would you find the period of a wave 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">y=b_1 \sin \omega _1 x+b_2\sin \omega _2 x</script></span>
+<p>
+ where there is no restriction on the values for <script type="math/tex">\omega _1</script> and <script type="math/tex">\omega _2</script>. 
+</p>
+</li>
+<li id="a0000000115" value="2">
+<p>
+Use your method to find the period of <script type="math/tex">y=4\sin 3x + \sin 7x</script>. 
+</p>
+</li>
+<li id="a0000000116" value="3">
+<p>
+Check by plotting the graph. 
+</p>
+</li>
+</ol>
+</li>
+</ol>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section><section class="section">
+<h2 id="a0000000117">9 Fourier’s Theorem</h2>
+<p>
+ A periodic function <script type="math/tex">f(t)</script> of period <script type="math/tex">T</script> which satisfies certain conditions (known as the Dirichlet conditions), may be represented by an infinite series of sines and cosines called a Fourier series, of the form: 
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:green!40!black">
+<div class="eqn" id="def:Dirichlet">
+<script type="math/tex; mode=display">\begin{equation}\color {white}{ f(t)=\frac{1}{2} a_{0} + \sum ^{\infty }_{n=1}\left[ a_{n} \cos \frac{2n \pi t}{T} +b_{n} \sin \frac{2n \pi t}{T} \right]}\tag{5}\end{equation}</script>
+</div>
+</div>
+<p>
+ Here the <script type="math/tex">a_{n}</script> and <script type="math/tex">b_{n}</script> are constants which will vary according to what the function <script type="math/tex">f(t)</script> is. That is, provided <script type="math/tex">f(t)</script> satisfies the Dirichlet conditions, then for appropriate values of the so-called Fourier coefficients <script type="math/tex">a_{0}</script>, <script type="math/tex">a_{1}</script>, <script type="math/tex">a_{2}</script>,... <script type="math/tex">b_{1}</script>, <script type="math/tex">b_{2}</script>, <script type="math/tex">b_{3}</script>,... this infinite series will converge to the value of the function at any point where the function is defined. <br/>
+</p>
+<p>
+In other cases, functions may be represented by <em>integrals</em> involving sines and cosines, but this should not be surprising, since an integral is just a particular sort of continuous limiting sum. The process of finding the right combination of sines and cosines for a given function is called <b class="bfseries">Fourier analysis</b>. 
+</p>
+<p>
+<span class="vspace" style="height: 14.226377952755904pt"></span>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 2. </b> <span class="rmfamily"><b class="bfseries">The Dirichlet conditions, (Peter Dirichlet (1805-1859))</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+     The conditions to be satisfied for a function, <script type="math/tex">f(t)</script>, to be represented by a Fourier series are the ’Dirichlet condition’, which are:     <ul class="itemize" id="a0000000118">
+<li id="a0000000119">
+<p>
+<script type="math/tex">f(t)</script> must be defined and single valued: that is, for each value of <script type="math/tex">t</script> there is one and only one value of <script type="math/tex">f(t)</script>. (Thus, <script type="math/tex">f(t)=t^{2}</script> satisfies this condition but <script type="math/tex">f(t)=\pm \sqrt{t}</script> does not.) 
+</p>
+</li>
+<li id="a0000000120">
+<p>
+<script type="math/tex">f(t)</script> must be continuous or have a finite number of finite discontinuities within the periodic interval. 
+</p>
+</li>
+<li id="a0000000121">
+<p>
+<script type="math/tex">f(t)</script> and <script type="math/tex">f'(t)</script> must be piecewise continuous in the periodic interval. 
+</p>
+</li>
+</ul>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<figure id="Find_FS1">
+<div class="centered"><img alt="\includegraphics[height=4cm]{img/dirichlet_cond_images.png}" src="images/img-0013.png"/> <figcaption id="Find_FS1">
+<span class="caption_title">Figure</span>
+<span class="caption_ref">2</span>
+<span class="caption_text">Fourier’s Theorem could be applied to the first figure but not the second figure</span>
+</figcaption> </div>
+</figure>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 3. </b> <span class="rmfamily"><b class="bfseries">Fourier coefficients</b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<p>
+ The Fourier Series is: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  f(t)=\frac{1}{2} a_{0} + \sum _{n=1}^{\infty } \left[ a_{n} \cos \left( \frac{2n \pi t}{T} \right) +b_{n} \sin \left( \frac{2n \pi t}{T} \right) \right] \end{equation*}</script></span>
+<p>
+If the Dirichlet conditions are satisfied then the Fourier coefficients are found by using the formulae: 
+</p>
+<span class="dmath"><script type="math/tex; mode=display">\begin{equation*}  \label{eq:Fourier_coefficients} \begin{array}{lll} a_{0} & =&  \frac{2}{T} \int ^{T/2}_{-T/2} f(t) \,  dt \\[0.5em] a_{n} & =&  \frac{2}{T} \int ^{T/2}_{-T/2} f(t) \,  \cos \frac{2n \pi t}{T} \,  dt \quad n=1,2,3,\cdots \\[0.5em] b_{n} & =&  \frac{2}{T} \int ^{T/2}_{-T/2} f(t) \,  \sin \frac{2n \pi t}{T} \,  dt \quad n=1,2,3,\cdots \end{array}\end{equation*}</script></span>
+<p>
+ where <script type="math/tex">f(t)=f(t+nT)</script>. 
+</p>
+</div> <span class="vspace medskip"></span></span>
+</p>
+<span class="vspace" style="height: 14.226377952755904pt"></span>
+</p>
+<p>
+Note, that as might be expected with any mathematics involving trigonometric functions, these formulae are much simplified when period <script type="math/tex">T = 2 \pi </script>. 
+</p>
+<p>
+You may sometimes see the Fourier Series presented in terms of <script type="math/tex">x</script>, and sometimes for a function whose period is <script type="math/tex">2L</script>: <br/><span class="vspace" style="height: 113.81102362204723pt"></span>
+</p>
+<p>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Definition 4. </b> <span class="rmfamily"> <b class="bfseries">Fourier series with period <script type="math/tex">2L</script></b> <div class="tcolorbox" style="background-color:lightgreen; border-color:green!40!black">
+<p>
+ If a periodic function of period <script type="math/tex">2L</script> with the property can be expanded as a Fourier series, then that series is given by 
+</p>
+<div class="centered"> <div class="tcolorbox" style="background-color:white; border-color:green!40!black">
+</div> </div>
+<p>
+ where the Fourier coefficients are given by: 
+</p>
+<div class="centered"> <div class="tcolorbox" style="background-color:white; border-color:green!40!black">
+</div> </div>
+<p>
+where <script type="math/tex">f(x)=f(x+2L)</script>. 
+</p>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+<p>
+Whether you express the Fourier series in terms of the dependent variable <script type="math/tex">t</script> or <script type="math/tex">x</script> depends upon the nature of the waveform you are attempting to model. If it is a time series, then it is usual to use <script type="math/tex">t</script>; if it is a spatial function i.e. a real physical shape, then it is normal to use <script type="math/tex">x</script>. 
+</p>
+<p>
+<br/>
+<p>
+<span class="vspace medskip"></span><b class="bfseries">Example 5. </b> <span class="rmfamily"><b class="bfseries">Find the Fourier series</b> <div class="tcolorbox" style="background-color:lightblue; border-color:blue">
+<p>
+ Find the Fourier series for the following function: 
+</p>
+<div class="centered"> <img alt="\includegraphics[height=3cm]{img/find_FS.png}" src="images/img-0014.png"/> </div>
+<p>
+ where 
+</p>
+<div class="eqn" id="fig:find_FS">
+<script type="math/tex; mode=display">\begin{equation}\label{fig:find_FS} \begin{array}{ll} f(x) & = \left\lbrace \begin{array}{lll} 1 &  \text{if} &  0\leq x < \pi \\ 0 &  \text{if} &  \pi \leq x <2\pi . \end{array}\right.\\ &  = f(x+2\pi ) \end{array}\tag{6}\end{equation}</script>
+</div>
+<p>
+<b class="bfseries">Solution</b>
+</p>
+<div class="tcolorbox" style="background-color:white; border-color:blue">
+</div>
+<div class="tcolorbox" style="background-color:white; border-color:blue">
+</div>
+</div> <span class="vspace medskip"></span></span>
+</p>
+</p>
+</section>
+<script id="plastex-labels" type="application/json">{"eq_multodd1": {"ref": "1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#eq_multodd1"}, "eq_multodd2": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#eq_multodd2"}, "eq_multodd3": {"ref": "3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#ex:oddeven"}, "ex:oddeven": {"ref": "3", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#ex:oddeven"}, "eq:oddeven_ex": {"ref": "4", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#eq:oddeven_ex"}, "FT_sinsum1": {"ref": "1", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#FT_sinsum1"}, "def:Dirichlet": {"ref": "5", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#def:Dirichlet"}, "fig:periodic_T": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#Find_FS1"}, "eq:Fourier_Series": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#Find_FS1"}, "eq:Fourier_coefficients": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#Find_FS1"}, "defn:Fourier_L": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#Find_FS1"}, "Find_FS1": {"ref": "2", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#Find_FS1"}, "fig:find_FS": {"ref": "6", "url": "../../Users/AngharadU/Library/CloudStorage/OneDrive-SheffieldHallamUniversity/24-25/Methods_2/Notes/build/default/fourier_analysis/week1_notes/index.html#fig:find_FS"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.1.0, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-22</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:#ffffff;fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:#ffffff;stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
